@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musica</title>
+    <style>
+        * {
+            font-family: sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            height: 100vh;
+        }
+        .container img {
+            width: 100%;
+        }
+        .container {
+            align-items: center;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            height: 100vh;
+            background-color: black;
+        }
+        .container button {
+            padding: 10px 60px;
+            border: solid 2px black;
+        }
+    </style>
+</head>
+<body>
+    <section id="musica">
+        <div class="container">
+            <img src="img/escutando musica.png" alt="">
+            <audio controls src="music/bohemian-rhapsody-live-aid-1985.mp3"></audio>
+            <a href="deboas.html"><button>Voltar</button></a>
+        </div>
+    </section>
+</body>
+</html>

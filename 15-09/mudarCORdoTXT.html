@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="mensagem">Cores</p>
+    <button onclick="red()">Vermelho</button>
+    <button onclick="blue()">Azul</button>
+    <button onclick="green()">Verde</button>
+    <button onclick="yellow()">Amarelo</button>
+    <button onclick="reset()">Reset</button>
+</body>
+<script>
+    function red() {
+        document.getElementById("mensagem").style.color = "red";
+    }
+
+    function green() {
+        document.getElementById("mensagem").style.color = "green";  
+    }
+
+    function blue() {
+        document.getElementById("mensagem").style.color = "blue";
+    }
+
+    function yellow() {
+        document.getElementById("mensagem").style.color = "yellow";  
+    }
+
+    function reset() {
+        document.getElementById("mensagem").style.color = "#000";  
+    }
+</script>
+</html>

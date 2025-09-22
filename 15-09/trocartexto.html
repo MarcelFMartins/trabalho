@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <p id="mensagem">Olá!</p>
+    <button onclick="mudartxt()">Clique aqui</button>
+    <button onclick="reset()">Escrever Olá!</button>
+
+</body>
+<script>
+    let texto = "Olá";
+    let nome = "Paula";
+    let sobrenome = "Fernandes";
+    function mudartxt() {
+        document.getElementById("mensagem").innerText = "Você clicou no botão!";
+    }
+
+    function reset() {
+        document.getElementById("mensagem").innerText = texto;
+    }
+
+    
+
+
+</script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="idade" placeholder="Digite sua Idade">
+    <button onclick="enviar()">Enviar</button>
+    <p id="resultado"></p>
+
+
+    <script>
+        function enviar() {
+            let idade = document.getElementById("idade").value;
+
+            if (idade > 18) {
+                document.getElementById("resultado").innerText = "Você tem " + idade + " Anos, então pode tirar sua carteira!";
+            } else {
+                document.getElementById("resultado").innerText = "Você tem " + idade + " Anos, você é menor de idade!";
+            }
+        }
+    </script>
+</body>
+</html>

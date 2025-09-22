@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Vogel Assessoria Contábil</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #33568f;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            position: fixed;
+            width: 100%;
+        }
+
+        header ul {
+            display: flex;
+        }
+
+        header li {
+            list-style: none;
+            padding: 0px 60px 0px 0px;
+        }
+
+        header img {
+            width: 50px;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        #inicio .container {
+            background-image: url(img/BACKGROUND.png);
+            background-size: cover;
+            height: 100vh;
+        }
+
+        #sobre .container {
+            height: calc(100vh - 80px);
+        }
+
+        .container .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .logo img {
+            width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="img/Logo Branca.svg" alt="Logo"></a>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="inicio">
+        <div class="container">
+            <div class="logo">
+                <img src="img/Vogel Assessoria Contabil - branca.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <div class="container">
+            <h1>sobre</h1>
+        </div>
+    </section>
+
+</body>
+
+</html>

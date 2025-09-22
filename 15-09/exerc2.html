@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="numa" placeholder="Digite um  Numero">
+    <input type="number" id="numb" placeholder="Digite um  Numero">
+    <button onclick="comparar()">Comparar</button>
+    <p id="resultado"></p>
+
+    <script>
+
+
+        function comparar() {
+            let a = document.getElementById("numa").value;
+            let b = document.getElementById("numb").value;
+
+            a = parseFloat(a);
+            b = parseFloat(b);
+
+            if (a > b) {
+                document.getElementById("resultado").innerText = "O Número " + a + " é maior que o Número " + b + "!";
+            } else if (b > a) {
+                document.getElementById("resultado").innerText = "O Número " + b + " é maior que o Número " + a + "!";
+            } else {
+                document.getElementById("resultado").innerText = "Os números são iguais!";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
